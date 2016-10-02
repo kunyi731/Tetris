@@ -51,7 +51,7 @@ const arr_4 coord_map[NUM_SHAPES][NUM_ORIENTATIONS] = {
 };
 
 // Helper: get the next DOWN/LEFT/RIGHT of certain coord.
-// Helper: get the next orientation if action is ROTATE.
+// Get the next orientation if action is ROTATE.
 void update(Coord& c, Orientation& o, Action action) {
   if (action == DOWN) {
     c += Coord{0, 1};
@@ -205,11 +205,15 @@ void Game::start() {
   newPiece();
 }
 
+// Main function of game update logic.
 bool Game::update(Action action, std::string& debug) {
   if (game_over) {
     return false;
   }
+  // If any row is full, remove all colors.
   board.removeFullRows();
+
+  // If piece is consumed, generate a new random piece.
   if (!piece.get()) {
     newPiece();
     debug += " new piece";

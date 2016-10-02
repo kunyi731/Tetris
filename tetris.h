@@ -6,6 +6,8 @@
 using std::array;
 using std::vector;
 
+// Represents a coordinate (x, y) on the board.
+// Overloads operators for convenience.
 struct Coord {
   int x;
   int y;
@@ -24,6 +26,7 @@ struct Coord {
 
 using arr_4 = array<Coord, 4>; 
 
+// Each keystroke action maps to one of four actions.
 enum Action {
   DOWN,
   LEFT,
@@ -31,13 +34,32 @@ enum Action {
   ROTATE
 };
 
+// Enum for all piece shapes of the classic Tetris.
 enum PieceType {
+  // *
+  // *
+  // *
+  // *
   SHAPE_I,
+  // *
+  // *
+  // **
   SHAPE_L,
+  //  *
+  //  *
+  // **
   SHAPE_L_M,
+  // **
+  // **
   SHAPE_O,
+  //  **
+  // **
   SHAPE_S,
+  // **
+  //  **
   SHAPE_S_M,
+  // ***
+  //  *
   SHAPE_T,
   NUM_SHAPES
 };
@@ -106,6 +128,7 @@ class BoardRow {
   int num_filled;
 };
 
+// Represents board.
 class Board {
  public:
   Board(int height, int width);

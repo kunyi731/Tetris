@@ -1,7 +1,8 @@
 # Tetris
 Tetris written in C++ with TUI (Text User Interface).
+Make sure you have ncurses available.
 
-## How to run
+## How to build and run (Linux)
     ./build.sh && ./tetris
 
 ## How to play
