@@ -7,46 +7,46 @@
 // 7 piece types x 4 orientations x 4 coords.
 const arr_4 coord_map[NUM_SHAPES][NUM_ORIENTATIONS] = {
   {
-    {Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{2, -1}},
-    {Coord{0, -3}, Coord{0, -2}, Coord{0, -1}, Coord{0, 0}},
-    {Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{2, -1}},
-    {Coord{0, -3}, Coord{0, -2}, Coord{0, -1}, Coord{0, 0}}
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{2, -1}}},
+    {{Coord{0, -3}, Coord{0, -2}, Coord{0, -1}, Coord{0, 0}}},
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{2, -1}}},
+    {{Coord{0, -3}, Coord{0, -2}, Coord{0, -1}, Coord{0, 0}}}
   },
   {
-    {Coord{0, -2}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}},
-    {Coord{0, -2}, Coord{1, -2}, Coord{1, -1}, Coord{1, 0}},
-    {Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}}
+    {{Coord{0, -2}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}}},
+    {{Coord{0, -2}, Coord{1, -2}, Coord{1, -1}, Coord{1, 0}}},
+    {{Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}}}
   },
   {
-    {Coord{1, -2}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{-1, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{0, -2}, Coord{1, -2}, Coord{0, -1}, Coord{0, 0}},
-    {Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}
+    {{Coord{1, -2}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{-1, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{0, -2}, Coord{1, -2}, Coord{0, -1}, Coord{0, 0}}},
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}}
   },
   {
-    {Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}
+    {{Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{0, -1}, Coord{1, -1}, Coord{0, 0}, Coord{1, 0}}}
   },
   {
-    {Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}},
-    {Coord{0, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}},
-    {Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}},
-    {Coord{0, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}
+    {{Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}}},
+    {{Coord{0, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}},
+    {{Coord{0, -1}, Coord{1, -1}, Coord{-1, 0}, Coord{0, 0}}},
+    {{Coord{0, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}}
   },
   {
-    {Coord{-1, -1}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}},
-    {Coord{-1, -1}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}}
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}}},
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}}}
   },
   {
-    {Coord{0, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}},
-    {Coord{-1, -2}, Coord{-1, -1}, Coord{0, -1}, Coord{-1, 0}},
-    {Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}},
-    {Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}
+    {{Coord{0, -1}, Coord{-1, 0}, Coord{0, 0}, Coord{1, 0}}},
+    {{Coord{-1, -2}, Coord{-1, -1}, Coord{0, -1}, Coord{-1, 0}}},
+    {{Coord{-1, -1}, Coord{0, -1}, Coord{1, -1}, Coord{0, 0}}},
+    {{Coord{1, -2}, Coord{0, -1}, Coord{1, -1}, Coord{1, 0}}}
   }
 };
 
